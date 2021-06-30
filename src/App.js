@@ -5,7 +5,7 @@ import NavBar from "./Components/NavBar"
 function App() {
   return (
     <div className="container">
-      <br></br>
+      <br />
       <NavBar />
     </div>
   );
