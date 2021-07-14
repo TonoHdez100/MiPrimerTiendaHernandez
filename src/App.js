@@ -11,7 +11,6 @@ function App() {
       <br />
       <NavBar />
       <CartComponent />
-      <ItemCount stock="5" initial="1" />
     </div>
   );
 }
