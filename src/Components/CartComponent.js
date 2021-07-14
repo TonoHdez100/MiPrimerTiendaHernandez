@@ -14,20 +14,30 @@ export default class CartComponent extends Component {
                 id: 1,
                 title: 'Mouse',
                 description: 'Mouse Inalambrico',
-                price: '100'
+                price: '$100.00',
+                stock: "8"
             },
             {
                 id: 2,
                 title: 'Laptop',
                 description: 'Equipo Portatil',
-                price: '20000'
+                price: '$20,000.00',
+                stock: "5"
             },
             {
                 id: 3,
                 title: 'Monitor',
                 description: 'Monitor de 30 pulgadas',
-                price: '15000'
+                price: '$15,000.00',
+                stock: "7"
             },
+            {
+                id: 4,
+                title: 'MousePad',
+                description: 'MousePad ergonómico',
+                price: '$500.00',
+                stock: "18"
+            }
         ]
     }
 
@@ -38,7 +48,7 @@ export default class CartComponent extends Component {
             let items = []
 
             for(let index of this.MyItems){
-                let item = <ItemsProductList  id={index.id} title={index.title} description={index.description} price={index.price} />
+                let item = <ItemsProductList  id={index.id} title={index.title} description={index.description} price={index.price} stock={index.stock} />
                 items = [...items, item]
             }
             return items
@@ -46,7 +56,9 @@ export default class CartComponent extends Component {
         
         return(
             <div>
-                <h1><FontAwesomeIcon icon={faShoppingCart} /> My Cart</h1>
+                <br></br>
+                <h2>Lista de Productos</h2>
+                <br></br>
                 {dataItemsProductsList()}
             </div>
         )

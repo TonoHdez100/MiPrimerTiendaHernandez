@@ -14,7 +14,7 @@ export default function NavBar(){
             <Navbar.Brand href="#home">Mi Primer Tienda</Navbar.Brand>
             <Nav>
                 <Nav.Link href="#home">Inicio</Nav.Link>
-                <Nav.Link href="#whos">Quienes Somos</Nav.Link>
+                <Nav.Link href="#who">Quienes Somos</Nav.Link>
                 <Nav.Link href="#products">Productos</Nav.Link>
                 <Nav.Link href="#carrito"><CarWidget /> </Nav.Link>
             </Nav>
